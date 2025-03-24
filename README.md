@@ -3,7 +3,7 @@ Este é um projeto simples elaborado na aula de Soluções em Energias Renováve
 
 # Atividade de Teste / Explicação Pratica (CP-1):
 
-Nestes testes, foram analisadas 4 placas de motores eletricos, nas imagens das placas de cada motor estão marcadosas as seguintes informaçoes: Potência Útil, Rendimento e Fator Potência.
+Nestes testes, foram analisadas 4 placas de motores eletricos, nas imagens das placas de cada motor estão marcadas as seguintes informaçoes: Potência Útil, Rendimento e Fator Potência.
 
 ## Motor 1
 Placa:
