@@ -1,8 +1,8 @@
-Pu = int(input("Insita o valor da Potência Útil (em W): "))
+Pu = int(input("Insira o valor da Potência Útil (em W): "))
 
-n = float(input("Digite o valor do Rendimento (0 a 1): "))
+n = float(input("Insira o valor do Rendimento (Em %): "))
 
-fp = float(input("insira o valor do Fator Potência: "))
+fp = float(input("insira o valor do Fator Potência (0 a 1): "))
 
 # P = Pôtencia Ativa (Em W.)
 P = int(Pu / n)
