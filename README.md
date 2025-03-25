@@ -22,63 +22,27 @@ Com isso dito, esse projeto tem como principal função avaliar o desempenho e a
 
 Este documento apresenta os cálculos de potência ativa, reativa e aparente presentes na primeira placa do experimento (Confira: Motor 1):
 
-- **Potência Útil (\(P_u\))**: 130 W  
-- **Rendimento (\(\eta\))**: 50% (0.5)  
-- **Fator de Potência (\(FP\))**: 0.58  
+- **Potência Útil**: 130 W  
+- **Rendimento**: 50% (0.5)  
+- **Fator de Potência**: 0.58  
 
 ## 1. Cálculo da Potência Ativa (\(P\))
 
 A potência ativa é a potência realmente convertida em trabalho útil pelo motor:
 
-\[
-P = \frac{P_u}{\eta}
-\]
-
-Substituindo os valores:
-
-\[
-P = \frac{130}{0.5} = 260 \text{ W}
-\]
+![Calculo(P)](https://github.com/user-attachments/assets/c43b563c-5295-4f66-973b-6888317c5eb3)
 
 ## 2. Cálculo da Potência Aparente (\(S\))
 
 A potência aparente representa a potência total fornecida ao motor:
 
-\[
-S = \frac{P}{FP}
-\]
-
-Substituindo os valores:
-
-\[
-S = \frac{260}{0.58} = 448 \text{ VA}
-\]
+![Calculo(S)](https://github.com/user-attachments/assets/db1caa1e-f521-4ded-9bd4-5510ac298116)
 
 ## 3. Cálculo da Potência Reativa (\(Q\))
 
 A potência reativa pode ser calculada usando a relação trigonométrica:
 
-\[
-Q = S \cdot \sin(\theta)
-\]
-
-Sabemos que:
-
-\[
-FP = \cos(\theta) = 0.58
-\]
-
-Calculamos \( \sin(\theta) \):
-
-\[
-\sin(\theta) = \sqrt{1 - \cos^2(\theta)} = \sqrt{1 - 0.58^2} = \sqrt{0.6636} \approx 0.8159
-\]
-
-Agora, substituímos os valores:
-
-\[
-Q = 448 \times 0.8159 = 364 \text{ VAr}
-\]
+![Calculo](https://github.com/user-attachments/assets/3c847713-1935-4ee6-a9bf-6d64b8263f69)
 
 ## Resumo dos Resultados:
 
