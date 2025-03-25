@@ -1,6 +1,6 @@
 # CalcPotência
 
-'''
+```
      _________
     / ======= \
    / __________\
@@ -12,7 +12,7 @@
   / """"""""""" \                       /
  / ::::::::::::: \                  =D-'
 (_________________)
-'''
+```
 
 CalcPotência é um projeto simples, prática e educativa para engenheiros, técnicos e estudantes que trabalham com sistemas elétricos e motores. Este projeto foi elaborado por mim durante a aula de Soluções em Energias Renováveis e Sustentáveis com o intuito de analisar a inserção dos dados presentes em 4 placas de identificação de motores elétricos e obtenha os resultados da potência ativa, aparente e reativa para cada motor.
 
