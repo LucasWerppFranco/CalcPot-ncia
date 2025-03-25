@@ -16,6 +16,88 @@
 
 CalcPotência é um projeto simples, prática e educativa para engenheiros, técnicos e estudantes que trabalham com sistemas elétricos e motores. Este projeto foi elaborado por mim durante a aula de Soluções em Energias Renováveis e Sustentáveis com o intuito de analisar a inserção dos dados presentes em 4 placas de identificação de motores elétricos e obtenha os resultados da potência ativa, aparente e reativa para cada motor.
 
+# Como a Calculadora Funciona?
+
+Agora. Vou explicar como essa calculadora funciona usando como exemplo os dados presentes na primeira placa de motor (Confira: Motor 1).
+
+### 1. Potência Ativa (\( P \))  
+A potência ativa é a potência realmente convertida em trabalho útil pelo motor. Ela está relacionada ao rendimento (\( \eta \)) do motor:
+
+\[
+P = \frac{P_u}{\eta}
+\]
+
+Onde:
+- \( P_u = 130 \) W (Potência Útil)
+- \( \eta = 50\% = 0.5 \)
+
+Substituindo:
+
+\[
+P = \frac{130}{0.5} = 260 \text{ W}
+\]
+
+---
+
+### 2. Potência Aparente (\( S \)) 
+A potência aparente é a potência total fornecida ao motor, levando em conta tanto a potência ativa quanto a reativa. Ela é calculada usando o fator de potência (\( FP \)):
+
+\[
+S = \frac{P}{FP}
+\]
+
+Onde:
+- \( P = 260 \) W (Potência Ativa)
+- \( FP = 0.58 \)
+
+Substituindo:
+
+\[
+S = \frac{260}{0.58} = 448 \text{ VA}
+\]
+
+---
+
+### 3. Potência Reativa (\( Q \))
+A potência reativa está associada às perdas devido à defasagem entre tensão e corrente. Podemos calcular usando a relação trigonométrica:
+
+\[
+Q = S \cdot \sin(\theta)
+\]
+
+Como o fator de potência é:
+
+\[
+FP = \cos(\theta) = 0.58
+\]
+
+Podemos encontrar \( \sin(\theta) \) usando a identidade trigonométrica:
+
+\[
+\sin(\theta) = \sqrt{1 - \cos^2(\theta)}
+\]
+
+Substituindo \( \cos(\theta) = 0.58 \):
+
+\[
+\sin(\theta) = \sqrt{1 - 0.58^2} = \sqrt{1 - 0.3364} = \sqrt{0.6636} \approx 0.8159
+\]
+
+Agora calculamos \( Q \):
+
+\[
+Q = 448 \times 0.8159 = 364 \text{ VAr}
+\]
+
+---
+
+### **Resumo dos Cálculos:**
+- \( P = 260 \) W
+- \( S = 448 \) VA
+- \( Q = 364 \) VAr
+
+Essa abordagem didática mostra como cada grandeza está relacionada e como podemos derivá-las a partir dos dados fornecidos. Se quiser adicionar mais detalhes ou exemplos ao seu caderno, me avise! 🚀
+
 # Experimento prático (Primeiro CP da matéria):
 
 Nestes testes, foram analisados os dados presentes em 4 placas de motores elétricos diferentes, as primeiras imagens são correspondentes às placas de cada motor, nelas estão marcadas as seguintes informações: Potência Útil, Rendimento e Fator Potência. As outras imagens mostram os resultados da calculadora relativo a cada placa de motor.
