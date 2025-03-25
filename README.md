@@ -17,11 +17,11 @@ Placa:
 
 Resultados:
 
-![Resultado-1](https://github.com/user-attachments/assets/cd18ff52-306d-4439-9d2b-2b8df27bf87d)
+![Resultado-1](https://github.com/user-attachments/assets/5f6b3776-7704-4545-be7c-cd535d15615a)
 
 - **Pôtencia Ativa:** 260 W
-- **Pôtencia Reativa:** 364 VAr
-- **Pôtencia Aparente:** 448 VA
+- **Pôtencia Reativa:** 365.17 VAr
+- **Pôtencia Aparente:** 448.28 VA
 
 ## Motor 2
 Placa:
@@ -34,11 +34,11 @@ Placa:
 
 Resultados:
 
-![Resultado-2](https://github.com/user-attachments/assets/b63eb2d0-9015-4cc7-b5c1-a0d8c9afe16c)
+![Resultado-2](https://github.com/user-attachments/assets/e321c69f-fd1b-4080-a13b-0f3e9295244a)
 
-- **Pôtencia Ativa:** 3171 W
-- **Pôtencia Reativa:** 1964 VAr
-- **Pôtencia Aparente:** 3730 VA
+- **Pôtencia Ativa:** 3171.25 W
+- **Pôtencia Reativa:** 1965.36 VAr
+- **Pôtencia Aparente:** 3730.88 VA
 
 ## Motor 3
 Placa:
@@ -51,11 +51,11 @@ Placa:
 
 Resultados:
 
-![Resultado-3](https://github.com/user-attachments/assets/0721cb8e-7e04-4e86-84c7-29af9bdace2e)
+![Resultado-3](https://github.com/user-attachments/assets/971d1978-f4ae-4be1-9bb5-6e04338af512)
 
-- **Pôtencia Ativa:** 313152 W
-- **Pôtencia Reativa:** 160432 VAr
-- **Pôtencia Aparente:** 351856 VA
+- **Pôtencia Ativa:** 313152.40 W
+- **Pôtencia Reativa:** 160432.73 VAr
+- **Pôtencia Aparente:** 351856.63 VA
 
 ## Motor 4
 Placa:
@@ -68,11 +68,11 @@ Placa:
 
 Resultados:
 
-![Resultado-4](https://github.com/user-attachments/assets/de7c263e-f666-4bf5-8a65-83428a264bb3)
+![Resultado-4](https://github.com/user-attachments/assets/2c156b21-f9af-4510-8c9b-c74e771c5d57)
 
-- **Pôtencia Ativa será:** 1349 W
-- **Pôtencia Reativa será:** 1188 VAr
-- **Pôtencia Aparente será:** 1798 VA
+- **Pôtencia Ativa será:** 1349.69 W
+- **Pôtencia Reativa será:** 1188.32 VAr
+- **Pôtencia Aparente será:** 1799.59 VA
 
 # Considerações Do Escritor
 
