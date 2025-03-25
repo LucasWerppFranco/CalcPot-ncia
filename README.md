@@ -1,9 +1,10 @@
-# Calculadora-Motores_Eletricos
-Este é um projeto simples elaborado na aula de Soluções em Energias Renováveis e Sustentáveis com o intuito de analisar a inserção dos dados de placas de identificação de motores eletricos e obtenha os resultados das potências ativa, aparente e reativa para cada motor. 
+# CalcPotência
 
-# Atividade de Teste / Explicação Pratica (CP-1):
+CalcPotência é um projeto simples, prática e educativa para engenheiros, técnicos e estudantes que trabalham com sistemas elétricos e motores. Este projeto foi elaborado por mim durante a aula de Soluções em Energias Renováveis e Sustentáveis com o intuito de analisar a inserção dos dados presentes em 4 placas de identificação de motores elétricos e obtenha os resultados da potência ativa, aparente e reativa para cada motor.
 
-Nestes testes, foram analisadas 4 placas de motores eletricos, nas imagens das placas de cada motor estão marcadas as seguintes informaçoes: Potência Útil, Rendimento e Fator Potência.
+# Experimento prático (Primeiro CP da matéria):
+
+Nestes testes, foram analisados os dados presentes em 4 placas de motores elétricos diferentes, as primeiras imagens são correspondentes às placas de cada motor, nelas estão marcadas as seguintes informações: Potência Útil, Rendimento e Fator Potência. As outras imagens mostram os resultados da calculadora relativo a cada placa de motor.
 
 ## Motor 1
 Placa:
@@ -72,3 +73,7 @@ Resultados:
 - **Pôtencia Ativa será:** 1349 W
 - **Pôtencia Reativa será:** 1188 VAr
 - **Pôtencia Aparente será:** 1798 VA
+
+# Considerações Do Escritor
+
+O projeto pode ser expandido futuramente para incluir mais funcionalidades em prol do usuário, como gráficos de desempenho, análise de eficiência, integração com bancos de dados para armazenar e comparação de resultados de diferentes motores, (ets...).
