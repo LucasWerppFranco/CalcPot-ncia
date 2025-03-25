@@ -1,18 +1,39 @@
-Pu = int(input("Insira o valor da Potência Útil (em W): "))
+import math
 
-n = float(input("Insira o valor do Rendimento (Em %): "))
+def obter_input_float(mensagem):
+    while True:
+        try:
+            valor = float(input(mensagem))
+            return valor
+        except ValueError:
+            print("Por favor, insira um número válido.")
 
-fp = float(input("insira o valor do Fator Potência (0 a 1): "))
+def obter_input_int(mensagem):
+    while True:
+        try:
+            valor = int(input(mensagem))
+            return valor
+        except ValueError:
+            print("Por favor, insira um número inteiro válido.")
 
-# P = Pôtencia Ativa (Em W.)
-P = int(Pu / n)
+# Obter os valores de entrada
+Pu = obter_input_int("Insira o valor da Potência Útil (em W): ")
 
-# S = Potencia Aparente (Em VA.)
-S = int(P / fp)
+n = obter_input_float("Insira o valor do Rendimento (em %): ") / 100
 
-# Q = Pôtencia Reativa (Em VAr.)
-Q = int((S**2 - P**2)**0.5)
+fp = obter_input_float("Insira o valor do Fator Potência (0 a 1): ")
 
-print(f"O valor da Pôtencia Ativa será: {P} W.")
-print(f"O valor da Pôtencia Reativa será: {Q} VAr.")
-print(f"O valor da Pôtencia Aparente será: {S} VA.")
+# (P) = Cálculo da Potência Ativa (Em W.)
+P = Pu / n
+
+# (S) = Cálculo da Potência Aparente (Em VA.)
+S = P / fp
+
+# (Q) = Cálculo da Potência Reativa (Em VAr.)
+Q = math.sqrt(S**2 - P**2)
+
+# Exibir os resultados
+print("-----------------------------------------")
+print(f"O valor da Potência Ativa será: {P:.2f} W.")
+print(f"O valor da Potência Reativa será: {Q:.2f} VAr.")
+print(f"O valor da Potência Aparente será: {S:.2f} VA.")
