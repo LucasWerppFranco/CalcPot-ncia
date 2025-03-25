@@ -24,15 +24,15 @@ Com isso dito, esse projeto tem como principal função avaliar o desempenho e a
 
 # Como a Calculadora Funciona?
 
-Este documento mostra o pensamento matemático por traz do algoritimo desta calculadora e explica como o calculo deve ser efetuado. 
+Este documento mostra o pensamento matemático por traz do algoritimo em python desta calculadora. 
 
-### 1. Cálculo da Potência Ativa (\( P \))
+### 1. Cálculo da Potência Ativa (\ P \)
 
 A potência ativa é a potência realmente convertida em trabalho útil pelo motor:
 
 $$ P = \frac{P_u}{\eta} $$
 
-### 2. Cálculo da Potência Aparente (\( S \))
+### 2. Cálculo da Potência Aparente (\ S \)
 
 A potência aparente representa a potência total fornecida ao motor:
 
@@ -42,7 +42,7 @@ Substituindo \( P \):
 
 $$ S = \frac{P_u}{\eta \cdot FP} $$
 
-### 3. Cálculo da Potência Reativa (\( Q \))
+### 3. Cálculo da Potência Reativa (\ Q \)
 
 A potência reativa pode ser calculada usando a relação trigonométrica:
 
@@ -66,7 +66,7 @@ $$ Q = \frac{P_u}{\eta \cdot FP} \cdot \sqrt{1 - FP^2} $$
 
 # Experimento prático (Primeiro CP da matéria):
 
-Nestes testes, foram analisados os dados presentes em 4 placas de motores elétricos diferentes, as primeiras imagens são correspondentes às placas de cada motor, nelas estão marcadas as seguintes informações: Potência Útil, Rendimento e Fator Potência. As outras imagens mostram os resultados da calculadora relativo a cada placa de motor.
+Para estes testes, foram analisados os dados presentes em 4 placas de motores elétricos diferentes, as primeiras imagens são correspondentes às placas de cada motor, nelas estão marcadas as seguintes informações: Potência Útil, Rendimento e Fator Potência. As outras imagens mostram os resultados da calculadora relativo a cada placa de motor.
 
 ## Motor 1
 Placa:
