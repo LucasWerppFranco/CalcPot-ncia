@@ -24,11 +24,7 @@ Com isso dito, esse projeto tem como principal função avaliar o desempenho e a
 
 # Como a Calculadora Funciona?
 
-Este documento mostra o pensamento matemático por traz do algoritimo desta calculadora e explica como o calculo deve ser efetuado.
-
-- **Potência Útil (\( P_u \))**  
-- **Rendimento (\( \eta \))**  
-- **Fator de Potência (\( FP \))**  
+Este documento mostra o pensamento matemático por traz do algoritimo desta calculadora e explica como o calculo deve ser efetuado. 
 
 ### 1. Cálculo da Potência Ativa (\( P \))
 
