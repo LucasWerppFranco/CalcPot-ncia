@@ -1,7 +1,3 @@
-layout: post
-title: "Cálculo de Energia de Motores"
-mathjax: true
-
 # CalcPotência
 
 ```
