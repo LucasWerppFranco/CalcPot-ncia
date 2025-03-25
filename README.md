@@ -24,33 +24,29 @@ Com isso dito, esse projeto tem como principal função avaliar o desempenho e a
 
 # Como a Calculadora Funciona?
 
-Este documento apresenta os cálculos de potência ativa, reativa e aparente presentes na primeira placa do experimento (Confira: Motor 1):
+Este documento mostra o pensamento matemático por traz do algoritimo desta calculadora e explica como o calculo deve ser efetuado.
 
-- **Potência Útil**: 130 W  
-- **Rendimento**: 50% (0.5)  
-- **Fator de Potência**: 0.58  
+- **Potência Útil (\( P_u \))**  
+- **Rendimento (\( \eta \))**  
+- **Fator de Potência (\( FP \))**  
 
-## 1. Cálculo da Potência Ativa (\(P\))
+### 1. Cálculo da Potência Ativa (\( P \))
 
 A potência ativa é a potência realmente convertida em trabalho útil pelo motor:
 
 $$ P = \frac{P_u}{\eta} $$
 
-Substituindo os valores:
-
-$$ P = \frac{130}{0.5} = 260 \text{ W} $$
-
-## 2. Cálculo da Potência Aparente (\(S\))
+### 2. Cálculo da Potência Aparente (\( S \))
 
 A potência aparente representa a potência total fornecida ao motor:
 
 $$ S = \frac{P}{FP} $$
 
-Substituindo os valores:
+Substituindo \( P \):
 
-$$ S = \frac{260}{0.58} = 448 \text{ VA} $$
+$$ S = \frac{P_u}{\eta \cdot FP} $$
 
-## 3. Cálculo da Potência Reativa (\(Q\))
+### 3. Cálculo da Potência Reativa (\( Q \))
 
 A potência reativa pode ser calculada usando a relação trigonométrica:
 
@@ -58,17 +54,19 @@ $$ Q = S \cdot \sin(\theta) $$
 
 Sabemos que:
 
-$$ FP = \cos(\theta) = 0.58 $$
+$$ FP = \cos(\theta) $$
 
-Calculamos \( \sin(\theta) \):
+Logo, podemos calcular \( \sin(\theta) \) como:
 
-$$ \sin(\theta) = \sqrt{1 - \cos^2(\theta)} $$
+$$ \sin(\theta) = \sqrt{1 - \cos^2(\theta)} = \sqrt{1 - FP^2} $$
 
-$$ \sin(\theta) = \sqrt{1 - 0.58^2} = \sqrt{0.6636} \approx 0.8159 $$
+Substituindo na equação de \( Q \):
 
-Agora, substituímos os valores:
+$$ Q = S \cdot \sqrt{1 - FP^2} $$
 
-$$ Q = 448 \times 0.8159 = 364 \text{ VAr} $$
+Ou, substituindo \( S \):
+
+$$ Q = \frac{P_u}{\eta \cdot FP} \cdot \sqrt{1 - FP^2} $$
 
 # Experimento prático (Primeiro CP da matéria):
 
