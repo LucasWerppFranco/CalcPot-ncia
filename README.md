@@ -1,3 +1,7 @@
+layout: post
+title: "Cálculo de Energia de Motores"
+mathjax: true
+
 # CalcPotência
 
 ```
@@ -30,28 +34,41 @@ Este documento apresenta os cálculos de potência ativa, reativa e aparente pre
 
 A potência ativa é a potência realmente convertida em trabalho útil pelo motor:
 
-![Calculo(P)](https://github.com/user-attachments/assets/e9aa42de-def8-4cec-b334-1121c359f8a2)
+$$ P = \frac{P_u}{\eta} $$
+
+Substituindo os valores:
+
+$$ P = \frac{130}{0.5} = 260 \text{ W} $$
 
 ## 2. Cálculo da Potência Aparente (\(S\))
 
 A potência aparente representa a potência total fornecida ao motor:
 
-![Calculo(S)](https://github.com/user-attachments/assets/839463c6-fa6f-4710-84f2-30cef3ab64cf)
+$$ S = \frac{P}{FP} $$
 
+Substituindo os valores:
+
+$$ S = \frac{260}{0.58} = 448 \text{ VA} $$
 
 ## 3. Cálculo da Potência Reativa (\(Q\))
 
 A potência reativa pode ser calculada usando a relação trigonométrica:
 
-![Calculo](https://github.com/user-attachments/assets/3c847713-1935-4ee6-a9bf-6d64b8263f69)
+$$ Q = S \cdot \sin(\theta) $$
 
-## Resumo dos Resultados:
+Sabemos que:
 
-| Grandeza            | Valor  | Unidade |
-|---------------------|--------|---------|
-| **Potência Ativa**  | 260    | W       |
-| **Potência Aparente** | 448  | VA      |
-| **Potência Reativa** | 364   | VAr     |
+$$ FP = \cos(\theta) = 0.58 $$
+
+Calculamos \( \sin(\theta) \):
+
+$$ \sin(\theta) = \sqrt{1 - \cos^2(\theta)} $$
+
+$$ \sin(\theta) = \sqrt{1 - 0.58^2} = \sqrt{0.6636} \approx 0.8159 $$
+
+Agora, substituímos os valores:
+
+$$ Q = 448 \times 0.8159 = 364 \text{ VAr} $$
 
 # Experimento prático (Primeiro CP da matéria):
 
