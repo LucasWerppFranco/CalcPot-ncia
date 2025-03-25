@@ -26,7 +26,7 @@ Com isso dito, esse projeto tem como principal função avaliar o desempenho e a
 
 Este documento mostra o pensamento matemático por traz do algoritimo em python desta calculadora. 
 
-### 1. Cálculo da Potência Ativa (\P \)
+### 1. Cálculo da Potência Ativa ( P )
 
 A potência ativa é a potência realmente convertida em trabalho útil pelo motor:
 
