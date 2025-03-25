@@ -18,48 +18,6 @@ CalcPotência é um projeto simples, prática e educativa para engenheiros, téc
 
 Com isso dito, esse projeto tem como principal função avaliar o desempenho e as necessidades elétricas de motores em operação a partir de sua Potência Útil, do seu Rendimento e do seu Fator de Potência.
 
-# Como a Calculadora Funciona?
-
-Este documento mostra o pensamento matemático por traz do algoritimo em python desta calculadora. 
-
-### 1. Cálculo da Potência Ativa ( P )
-
-A potência ativa é a potência realmente convertida em trabalho útil pelo motor:
-
-$$ P = \frac{P_u}{\eta} $$
-
-### 2. Cálculo da Potência Aparente ( S )
-
-A potência aparente representa a potência total fornecida ao motor:
-
-$$ S = \frac{P}{FP} $$
-
-Substituindo \( P \):
-
-$$ S = \frac{P_u}{\eta \cdot FP} $$
-
-### 3. Cálculo da Potência Reativa ( Q )
-
-A potência reativa pode ser calculada usando a relação trigonométrica:
-
-$$ Q = S \cdot \sin(\theta) $$
-
-Sabemos que:
-
-$$ FP = \cos(\theta) $$
-
-Logo, podemos calcular \( \sin(\theta) \) como:
-
-$$ \sin(\theta) = \sqrt{1 - \cos^2(\theta)} = \sqrt{1 - FP^2} $$
-
-Substituindo na equação de \( Q \):
-
-$$ Q = S \cdot \sqrt{1 - FP^2} $$
-
-Ou, substituindo \( S \):
-
-$$ Q = \frac{P_u}{\eta \cdot FP} \cdot \sqrt{1 - FP^2} $$
-
 # Experimento prático (Primeiro CP da matéria):
 
 Para estes testes, foram analisados os dados presentes em 4 placas de motores elétricos diferentes, as primeiras imagens são correspondentes às placas de cada motor, nelas estão marcadas as seguintes informações: Potência Útil, Rendimento e Fator Potência. As outras imagens mostram os resultados da calculadora relativo a cada placa de motor.
@@ -131,6 +89,48 @@ Resultados:
 - **Pôtencia Ativa será:** 1349 W
 - **Pôtencia Reativa será:** 1188 VAr
 - **Pôtencia Aparente será:** 1798 VA
+
+# Como a Calculadora Funciona?
+
+Este documento mostra o pensamento matemático por traz do algoritimo em python desta calculadora. 
+
+### 1. Cálculo da Potência Ativa ( P )
+
+A potência ativa é a potência realmente convertida em trabalho útil pelo motor:
+
+$$ P = \frac{P_u}{\eta} $$
+
+### 2. Cálculo da Potência Aparente ( S )
+
+A potência aparente representa a potência total fornecida ao motor:
+
+$$ S = \frac{P}{FP} $$
+
+Substituindo \( P \):
+
+$$ S = \frac{P_u}{\eta \cdot FP} $$
+
+### 3. Cálculo da Potência Reativa ( Q )
+
+A potência reativa pode ser calculada usando a relação trigonométrica:
+
+$$ Q = S \cdot \sin(\theta) $$
+
+Sabemos que:
+
+$$ FP = \cos(\theta) $$
+
+Logo, podemos calcular \( \sin(\theta) \) como:
+
+$$ \sin(\theta) = \sqrt{1 - \cos^2(\theta)} = \sqrt{1 - FP^2} $$
+
+Substituindo na equação de \( Q \):
+
+$$ Q = S \cdot \sqrt{1 - FP^2} $$
+
+Ou, substituindo \( S \):
+
+$$ Q = \frac{P_u}{\eta \cdot FP} \cdot \sqrt{1 - FP^2} $$
 
 # Considerações Do Escritor
 
