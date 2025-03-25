@@ -16,7 +16,6 @@ def obter_input_int(mensagem):
         except ValueError:
             print("Por favor, insira um número inteiro válido.")
 
-# Obter os valores de entrada
 Pu = int(obter_input_int("Insira o valor da Potência Útil (em W): "))
 
 n = float(obter_input_float("Insira o valor do Rendimento (em %): ") / 100)
@@ -32,7 +31,6 @@ S = int(P / fp)
 # (Q) = Cálculo da Potência Reativa (Em VAr.)
 Q = int(math.sqrt(S**2 - P**2))
 
-# Exibir os resultados
 print("-----------------------------------------")
 print(f"O valor da Potência Ativa será: {P:.2f} W.")
 print(f"O valor da Potência Reativa será: {Q:.2f} VAr.")
