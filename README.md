@@ -16,87 +16,77 @@
 
 CalcPotência é um projeto simples, prática e educativa para engenheiros, técnicos e estudantes que trabalham com sistemas elétricos e motores. Este projeto foi elaborado por mim durante a aula de Soluções em Energias Renováveis e Sustentáveis com o intuito de analisar a inserção dos dados presentes em 4 placas de identificação de motores elétricos e obtenha os resultados da potência ativa, aparente e reativa para cada motor.
 
+Com isso dito, esse projeto tem como principal função avaliar o desempenho e as necessidades elétricas de motores em operação a partir de sua Potência Útil, do seu Rendimento e do seu Fator de Potência.
+
 # Como a Calculadora Funciona?
 
-Agora. Vou explicar como essa calculadora funciona usando como exemplo os dados presentes na primeira placa de motor (Confira: Motor 1).
+Este documento apresenta os cálculos de potência ativa, reativa e aparente presentes na primeira placa do experimento (Confira: Motor 1):
 
-### 1. Potência Ativa (\( P \))  
-A potência ativa é a potência realmente convertida em trabalho útil pelo motor. Ela está relacionada ao rendimento (\( \eta \)) do motor:
+- **Potência Útil (\(P_u\))**: 130 W  
+- **Rendimento (\(\eta\))**: 50% (0.5)  
+- **Fator de Potência (\(FP\))**: 0.58  
+
+## 1. Cálculo da Potência Ativa (\(P\))
+
+A potência ativa é a potência realmente convertida em trabalho útil pelo motor:
 
 \[
 P = \frac{P_u}{\eta}
 \]
 
-Onde:
-- \( P_u = 130 \) W (Potência Útil)
-- \( \eta = 50\% = 0.5 \)
-
-Substituindo:
+Substituindo os valores:
 
 \[
 P = \frac{130}{0.5} = 260 \text{ W}
 \]
 
----
+## 2. Cálculo da Potência Aparente (\(S\))
 
-### 2. Potência Aparente (\( S \)) 
-A potência aparente é a potência total fornecida ao motor, levando em conta tanto a potência ativa quanto a reativa. Ela é calculada usando o fator de potência (\( FP \)):
+A potência aparente representa a potência total fornecida ao motor:
 
 \[
 S = \frac{P}{FP}
 \]
 
-Onde:
-- \( P = 260 \) W (Potência Ativa)
-- \( FP = 0.58 \)
-
-Substituindo:
+Substituindo os valores:
 
 \[
 S = \frac{260}{0.58} = 448 \text{ VA}
 \]
 
----
+## 3. Cálculo da Potência Reativa (\(Q\))
 
-### 3. Potência Reativa (\( Q \))
-A potência reativa está associada às perdas devido à defasagem entre tensão e corrente. Podemos calcular usando a relação trigonométrica:
+A potência reativa pode ser calculada usando a relação trigonométrica:
 
 \[
 Q = S \cdot \sin(\theta)
 \]
 
-Como o fator de potência é:
+Sabemos que:
 
 \[
 FP = \cos(\theta) = 0.58
 \]
 
-Podemos encontrar \( \sin(\theta) \) usando a identidade trigonométrica:
+Calculamos \( \sin(\theta) \):
 
 \[
-\sin(\theta) = \sqrt{1 - \cos^2(\theta)}
+\sin(\theta) = \sqrt{1 - \cos^2(\theta)} = \sqrt{1 - 0.58^2} = \sqrt{0.6636} \approx 0.8159
 \]
 
-Substituindo \( \cos(\theta) = 0.58 \):
-
-\[
-\sin(\theta) = \sqrt{1 - 0.58^2} = \sqrt{1 - 0.3364} = \sqrt{0.6636} \approx 0.8159
-\]
-
-Agora calculamos \( Q \):
+Agora, substituímos os valores:
 
 \[
 Q = 448 \times 0.8159 = 364 \text{ VAr}
 \]
 
----
+## Resumo dos Resultados:
 
-### **Resumo dos Cálculos:**
-- \( P = 260 \) W
-- \( S = 448 \) VA
-- \( Q = 364 \) VAr
-
-Essa abordagem didática mostra como cada grandeza está relacionada e como podemos derivá-las a partir dos dados fornecidos. Se quiser adicionar mais detalhes ou exemplos ao seu caderno, me avise! 🚀
+| Grandeza            | Valor  | Unidade |
+|---------------------|--------|---------|
+| **Potência Ativa**  | 260    | W       |
+| **Potência Aparente** | 448  | VA      |
+| **Potência Reativa** | 364   | VAr     |
 
 # Experimento prático (Primeiro CP da matéria):
 
