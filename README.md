@@ -30,13 +30,14 @@ Este documento apresenta os cálculos de potência ativa, reativa e aparente pre
 
 A potência ativa é a potência realmente convertida em trabalho útil pelo motor:
 
-![Calculo(P)](https://github.com/user-attachments/assets/c43b563c-5295-4f66-973b-6888317c5eb3)
+![Calculo(P)](https://github.com/user-attachments/assets/e9aa42de-def8-4cec-b334-1121c359f8a2)
 
 ## 2. Cálculo da Potência Aparente (\(S\))
 
 A potência aparente representa a potência total fornecida ao motor:
 
-![Calculo(S)](https://github.com/user-attachments/assets/db1caa1e-f521-4ded-9bd4-5510ac298116)
+![Calculo(S)](https://github.com/user-attachments/assets/839463c6-fa6f-4710-84f2-30cef3ab64cf)
+
 
 ## 3. Cálculo da Potência Reativa (\(Q\))
 
