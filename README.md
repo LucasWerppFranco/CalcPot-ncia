@@ -32,7 +32,7 @@ A potência ativa é a potência realmente convertida em trabalho útil pelo mot
 
 $$ P = \frac{P_u}{\eta} $$
 
-### 2. Cálculo da Potência Aparente (\ S \)
+### 2. Cálculo da Potência Aparente ( S )
 
 A potência aparente representa a potência total fornecida ao motor:
 
@@ -42,7 +42,7 @@ Substituindo \( P \):
 
 $$ S = \frac{P_u}{\eta \cdot FP} $$
 
-### 3. Cálculo da Potência Reativa (\ Q \)
+### 3. Cálculo da Potência Reativa ( Q )
 
 A potência reativa pode ser calculada usando a relação trigonométrica:
 
