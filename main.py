@@ -31,7 +31,7 @@ S = int(P / fp)
 # (Q) = Cálculo da Potência Reativa (Em VAr.)
 Q = int(math.sqrt(S**2 - P**2))
 
-print("-----------------------------------------")
+print("------------------------------------------")
 print(f"O valor da Potência Ativa será: {P:.2f} W.")
 print(f"O valor da Potência Reativa será: {Q:.2f} VAr.")
 print(f"O valor da Potência Aparente será: {S:.2f} VA.")
